@@ -66,7 +66,7 @@ test('verify response with code 200 and no body', async ({page}) => {
     expect(amountText).toBe(undefined + ' €');
 });
 
-test('verify response with code 200 and invalid key for monthlyvalue', async ({page}) => {
+test('verify response with code 200 and invalid key for monthly value', async ({page}) => {
     const valueMock = 11.22
     await page.route(routeToMock, async (route) => {
         const mockResponse = {
